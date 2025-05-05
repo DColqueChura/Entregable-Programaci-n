@@ -1,4 +1,4 @@
-# Entregable-Programacion
+
 ## Consigna
 ### Abierto: jueves, 1 de mayo de 2025, 00:00
 ### Fecha de vencimiento: lunes, 26 de mayo de 2025, 19:00
