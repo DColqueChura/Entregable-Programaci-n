@@ -1,3 +1,11 @@
+> 📢 Nota: Este proyecto fue desarrollado en colaboración con:
+> - Guillermo Aparicio
+> - Nadia Gallardo
+> - Yamila Carabante
+> - Daniela Colque Chura
+>   
+> **Como parte de una práctica académica en 2021.**
+
 # Consigna
 
 ### Abierto: jueves, 1 de mayo de 2025, 00:00
