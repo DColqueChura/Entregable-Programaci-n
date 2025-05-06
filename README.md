@@ -1,11 +1,3 @@
-> 📢 Nota: Este proyecto fue desarrollado en colaboración con:
-> - Guillermo Aparicio
-> - Nadia Gallardo
-> - Yamila Carabante
-> - Daniela Colque Chura
->   
-> **Como parte de una práctica académica en 2025.**
-
 # Consigna
 
 ### Abierto: jueves, 1 de mayo de 2025, 00:00
@@ -28,5 +20,14 @@ etc...
 
 El programa, luego de inicializar el TAD elegido y leer los 4 archivos debe pedir al usuario una categoría y cuantos debe imprimir: deberá imprimir al azar elementos de esa categoría sin repetir (si, deberá meter los elementos impresos en algún otro tipo de datos.
 
->  📝 *Se evaluará prolijidad, solución elegida, TAD elegidos, separación en varios archivos.*
+### 📝 *Se evaluará prolijidad, solución elegida, TAD elegidos, separación en varios archivos.*
+ 
+
+> 📢 Nota: Este proyecto fue desarrollado en colaboración con:
+> - Guillermo Aparicio
+> - Nadia Gallardo
+> - Yamila Carabante
+> - Daniela Colque Chura
+>   
+> **Como parte de una práctica académica en 2025.**
 
