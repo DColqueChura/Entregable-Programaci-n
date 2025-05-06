@@ -6,14 +6,17 @@ En grupos, entregar TP por aula virtual y luego defender la entrega en clases. U
 
 Se tienen las siguientes categorías:  planetas, estrellas, cometas, y satélites.
 
-Escriba un programa en lenguaje C que inicialice datos de estas categorías en algún TAD visto en clases, y los almacene de manera ordenada. Los datos deben ser leídos de archivos de datos (aves.txt, mamiferos.txt, peces.txt, reptiles.txt) . Cada archivo contendrá muchas líneas, cada lineal con el nombre correspondiente al animal de la categoría. Ejemplo de planetas.txt:
-Krypton
-Mercurio
-Venus
-Tierra
-Planeta X
-Vulcano
+Escriba un programa en lenguaje C que inicialice datos de estas categorías en algún TAD visto en clases, y los almacene de manera ordenada. Los datos deben ser leídos de archivos de datos (planetas.txt 🌏, estrellas.txt ✨, cometas.txt ☄, satelites.txt 🛰) . Cada archivo contendrá muchas líneas, cada lineal con el nombre correspondiente al animal de la categoría. 
+
+Ejemplo de planetas.txt:
+- Krypton
+- Mercurio
+- Venus
+- Tierra 
+- Planeta X
+- Vulcano
 etc...
+
 El programa, luego de inicializar el TAD elegido y leer los 4 archivos debe pedir al usuario una categoría y cuantos debe imprimir: deberá imprimir al azar elementos de esa categoría sin repetir (si, deberá meter los elementos impresos en algún otro tipo de datos.
 
 Se evaluará prolijidad, solución elegida, TAD elegidos, separación en varios archivos.
