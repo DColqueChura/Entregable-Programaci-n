@@ -4,7 +4,7 @@
 > - Yamila Carabante
 > - Daniela Colque Chura
 >   
-> **Como parte de una práctica académica en 2021.**
+> **Como parte de una práctica académica en 2025.**
 
 # Consigna
 
