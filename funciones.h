@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define CANT_LETRAS 20
+#define CANT_ARCHIVOS 4
 
 typedef char * tipoDato;
 
@@ -11,16 +12,18 @@ struct Nodo{
 };
 
 typedef struct{
-    int n;
+    int cantidad;
     struct Nodo *primerNodo;
 }Lista_T;
 
-void CrearLista(Lista_T *l);
+void CrearLista(Lista_T *lista);
 
 //char a_minuscula(char letra);
-void cadena_a_minusculas(char *s);
+void cadenaAminusculas(char *s);
+
+int EstaVacia(Lista_T lista);
 
 int InsertarUltimo(Lista_T *l, tipoDato x);
-int EstaVacia(Lista_T l);
+void function(FILE *archivo[CANT_ARCHIVOS], Lista_T *lista[]);
 
-
+int RecorrerLista(Lista_T *l);
