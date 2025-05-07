@@ -1,6 +1,14 @@
-Krypton
 Mercurio
 Venus
 Tierra
-Planeta X
-Vulcano 
+Marte
+Júpiter
+Saturno
+Urano
+Neptuno 
+Plutón
+Haumea
+Makemake
+Eris
+Sedna
+Phattie
