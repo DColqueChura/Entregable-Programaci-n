@@ -17,7 +17,7 @@ int main(){
     for(int i = 0; i<4; i++){
         archivo[i] = fopen(categorias[i], "r");
         
-        //Manejo de errores
+        //Comprueba que se haya abierto el archivo. Si no puede abrirlo, el archivo retorna NULL
         if(!archivo[i]){
             //Imprime en stderr un mensaje de error.
             perror(categorias[i]);   //Ej. <nombre del archivo> “No such file or directory”
