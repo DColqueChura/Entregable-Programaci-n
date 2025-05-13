@@ -17,13 +17,12 @@ typedef struct{
 }Lista_T;
 
 void CrearLista(Lista_T *lista);
+Lista_T arrayPunteros(Lista_T **lista);
 
 //char a_minuscula(char letra);
 void cadenaAminusculas(char *s);
 
-int EstaVacia(Lista_T lista);
-
+int EstaVacia(Lista_T *lista);
 int InsertarUltimo(Lista_T *l, tipoDato x);
-void function(FILE *archivo[CANT_ARCHIVOS], Lista_T *lista[]);
-
-int RecorrerLista(Lista_T *l);
+void archivo_A_lista(FILE *archivo[CANT_ARCHIVOS], Lista_T **lista);
+void RecorrerLista(Lista_T *l);
