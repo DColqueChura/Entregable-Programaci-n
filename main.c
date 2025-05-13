@@ -4,8 +4,6 @@
 #include "funciones.h"
 #define CANT_ARCHIVOS 4
 
-
-
 int main(){
     char *categorias[] = {
         "planetas.txt", 
@@ -31,26 +29,21 @@ int main(){
         }
     }
     
-    // 2) Crear un array de punteros a Lista_T y reservar memoria para cada lista
     Lista_T *catego[CANT_ARCHIVOS];
-    for (int i = 0; i < CANT_ARCHIVOS; i++) {
-        catego[i] = malloc(sizeof *catego[i]);
-        if (!catego[i]) {
-            perror("malloc");
-            exit(EXIT_FAILURE);
-        }
-        CrearLista(catego[i]);    // inicializa la lista vacía
-    }
-
-    int opcion = 0;
-
+    arrayPunteros(catego);
+   
     //Llena las 1 listas por cada archivo. Los archivos son 4.
-    function(archivo, catego);
+    archivo_A_lista(archivo, catego);
+
+    int opcion;
+    printf("\nQue categoria desea recorrer?\n");
+    printf(" 0: Planetas \n 1: Estrellas \n 2: Cometas \n 3: Satelites\n");
+    printf("Opcion: ");
+    scanf("%d", &opcion);
 
     //Imprime la lista, dada una elección de la categoría = opcion
     RecorrerLista(catego[opcion]);
 
-    
     
     //Bucle para cerrar los archivos
     for(int i = 0; i<CANT_ARCHIVOS; i++){
