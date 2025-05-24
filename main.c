@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "funciones.h"
 #define CANT_ARCHIVOS 4
 
 int main(){
+    //1. Definir los archivos
     char *categorias[] = {
         "planetas.txt", 
         "estrellas.txt", 
@@ -12,43 +14,43 @@ int main(){
         "satelites.txt"
     };
     
-    //Declara un array de 4 punteros (desde archivos[0] a archivos[3]) a FILE
+    //2. Declarar un array de punteros a archivo
     FILE *archivo[CANT_ARCHIVOS];
 
-    //Bucle para abrir cada archivo
-    for(int i = 0; i<CANT_ARCHIVOS; i++){
-        archivo[i] = fopen(categorias[i], "r");
-        
-        //Manejo de errores
-        if(!archivo[i]){
-            //Imprime en stderr un mensaje de error.
-            perror(categorias[i]);   //Ej. <nombre del archivo> “No such file or directory”
-            
-            //Termina inmediatamente el programa con un código de error.
-            exit(EXIT_FAILURE);
-        }
-    }
+    //3. Abrir todos los archivos (de forma segura)
+    abrirArchivos(categorias, archivo);
     
-    Lista_T *catego[CANT_ARCHIVOS];
-    arrayPunteros(catego);
+    //4. Declarar una lista de punteros a lista: para los archivos
+    Lista_T *lista_categorias[CANT_ARCHIVOS];
+    listaPunteros(lista_categorias);
    
-    //Llena las 1 listas por cada archivo. Los archivos son 4.
-    archivo_A_lista(archivo, catego);
+    //5. Guarda los elementos de cada archivo a la lista. Los archivos son 4.
+    llenarListas(archivo, lista_categorias);
+    
+    //6. Ordenar los elementos de cada lista
+    ordenarListaConQuickSort(lista_categorias);
 
-    int opcion;
+    //7. Experiencia de USUARIO
+    int opcion, cantidad;
     printf("\nQue categoria desea recorrer?\n");
     printf(" 0: Planetas \n 1: Estrellas \n 2: Cometas \n 3: Satelites\n");
     printf("Opcion: ");
     scanf("%d", &opcion);
 
-    //Imprime la lista, dada una elección de la categoría = opcion
-    RecorrerLista(catego[opcion]);
+    int longitud = longitudLista(opcion, lista_categorias);
+    printf("\nTotal de Elementos de %s -> %d\n", categorias[opcion], longitud);
+    printf("\nCuantos elementos imprimir?: \n");
+    scanf("%d", &cantidad);
 
-    
+    Lista_T rnd;
+    lista_rnd(lista_categorias[opcion], &rnd, longitud, cantidad);
+    RecorrerLista(&rnd);
+
     //Bucle para cerrar los archivos
     for(int i = 0; i<CANT_ARCHIVOS; i++){
-        free(catego[i]);
+        free(lista_categorias[i]);
         fclose(archivo[i]);
     }
+
     return 0;
 }
