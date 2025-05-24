@@ -1,5 +1,7 @@
 # Consigna
 
+🔗 [Diagrama-de-Flujo](https://drive.google.com/file/d/1lIUEYO8AYM6_ffOZX11SwYqdvF2YgIDV/view?usp=sharing) 
+
 ### Abierto: jueves, 1 de mayo de 2025, 00:00
 ### Fecha de vencimiento: lunes, 26 de mayo de 2025, 19:00
 
@@ -21,7 +23,6 @@ etc...
 El programa, luego de inicializar el TAD elegido y leer los 4 archivos debe pedir al usuario una categoría y cuantos debe imprimir: deberá imprimir al azar elementos de esa categoría sin repetir (si, deberá meter los elementos impresos en algún otro tipo de datos.
 
 ### 📝 *Se evaluará prolijidad, solución elegida, TAD elegidos, separación en varios archivos.*
- 
 
 > 📢 Nota: Este proyecto fue desarrollado en colaboración con:
 > - Guillermo Aparicio
