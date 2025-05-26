@@ -39,8 +39,12 @@ int main(){
 
     int longitud = longitudLista(opcion, lista_categorias);
     printf("\nTotal de Elementos de %s -> %d\n", categorias[opcion], longitud);
+    RecorrerLista(lista_categorias[opcion]);
     printf("\nCuantos elementos imprimir?: \n");
     scanf("%d", &cantidad);
+
+    if(cantidad > longitud){
+        printf("La cantidad ingresada EXCEDE los elementos de la lista\n\n");  exit(-1); }
 
     Lista_T rnd;
     lista_rnd(lista_categorias[opcion], &rnd, longitud, cantidad);
