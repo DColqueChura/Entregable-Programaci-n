@@ -118,7 +118,7 @@ Lista_T listaPunteros(Lista_T **lista){
 void llenarListas(FILE *archivo[CANT_ARCHIVOS], Lista_T **lista){
     int i=0;
     int cantidad = 0;
-    char cadena[15];
+    char cadena[30];
 
     for(int i=0; i<CANT_ARCHIVOS; i++){
         while(fscanf(archivo[i], "%s", cadena) == 1){
