@@ -191,8 +191,9 @@ void lista_rnd(Lista_T *lista, Lista_T *rnd, int total, int cantidad) {
     if (!arr) { perror("malloc"); exit(EXIT_FAILURE); }
 
     struct Nodo *p = lista->primerNodo;
-    for (int i = 0; i < total; i++, p = p->sig) {
+    for (int i = 0; i < total; i++) {
         arr[i] = p->dato;
+        p = p->sig;
     }
 
     // 2) Barajar el array
